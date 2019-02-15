@@ -9,4 +9,35 @@
         tools:showIn="@layout/activity_create_cards"
         tools:context=".CreateCards">
 
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cc_txt_card_name"
+            android:text="@string/txt_card_name"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cc_txt_card_number"
+            android:text="@string/txt_card_number"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/cc_edt_card_name"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/cc_edt_card_number" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/cc_txt_card_number" android:hint="@string/hint_number"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent" android:maxLength="20"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/cc_edt_card_name" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/cc_txt_card_name" android:hint="@string/hint_name"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent" android:maxLength="50"
+            android:textColorLink="@color/colorAccent"/>
 </android.support.constraint.ConstraintLayout>

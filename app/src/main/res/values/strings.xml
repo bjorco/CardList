@@ -2,4 +2,8 @@
     <string name="app_name">Cards</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_create_cards">CreateCards</string>
+    <string name="txt_card_name">Kort navn:</string>
+    <string name="txt_card_number">Kort nummer:</string>
+    <string name="hint_name">Navn</string>
+    <string name="hint_number">Nummer</string>
 </resources>
