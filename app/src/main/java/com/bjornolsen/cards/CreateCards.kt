@@ -18,5 +18,4 @@ class CreateCards : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
     }
-
 }
