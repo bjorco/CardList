@@ -4,10 +4,12 @@ import android.arch.persistence.room.Room
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.bjornolsen.cards.data.Card
+import com.bjornolsen.cards.data.Database
 import kotlinx.android.synthetic.main.activity_create_cards.*
 import kotlinx.android.synthetic.main.content_create_cards.*
 
-class CreateCards : AppCompatActivity() {
+class CreateCardsActivity : AppCompatActivity() {
 
     private val TAG = this.javaClass.simpleName
 
@@ -29,7 +31,7 @@ class CreateCards : AppCompatActivity() {
             .allowMainThreadQueries()
             .build()
 
-        db.cardDao().insert(Card(0,name,number))
+        db.cardDao().insert(Card(0, name, number))
 
         finish()
     }

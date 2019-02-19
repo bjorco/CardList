@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.bjornolsen.cards.data.Card
 
 class CardAdapter(context: Context, private val mCards: ArrayList<Card>) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
     class ViewHolder(v : View) : RecyclerView.ViewHolder(v) {

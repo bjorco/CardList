@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import com.bjornolsen.cards.data.Card
+import com.bjornolsen.cards.data.Database
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener{startActivity(Intent(this, CreateCards::class.java))}
+        fab.setOnClickListener{startActivity(Intent(this, CreateCardsActivity::class.java))}
 
         populateRecyclerView()
     }

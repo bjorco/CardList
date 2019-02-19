@@ -1,4 +1,4 @@
-package com.bjornolsen.cards
+package com.bjornolsen.cards.data
 
 import android.arch.persistence.room.Database
 import android.arch.persistence.room.RoomDatabase

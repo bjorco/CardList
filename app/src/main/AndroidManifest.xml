@@ -10,7 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".CreateCards"
+                android:name=".CreateCardsActivity"
                 android:label="@string/title_activity_create_cards"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>

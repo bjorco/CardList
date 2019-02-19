@@ -1,4 +1,4 @@
-package com.bjornolsen.cards
+package com.bjornolsen.cards.data
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey

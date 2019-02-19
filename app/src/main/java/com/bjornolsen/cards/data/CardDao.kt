@@ -1,7 +1,8 @@
-package com.bjornolsen.cards
+package com.bjornolsen.cards.data
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.*
+import com.bjornolsen.cards.data.Card
 
 @Dao
 interface CardDao {
