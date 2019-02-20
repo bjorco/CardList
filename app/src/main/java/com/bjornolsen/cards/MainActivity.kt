@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import com.bjornolsen.cards.adapter.CardAdapter
 import com.bjornolsen.cards.data.Card
 import com.bjornolsen.cards.data.Database
 import kotlinx.android.synthetic.main.activity_main.*

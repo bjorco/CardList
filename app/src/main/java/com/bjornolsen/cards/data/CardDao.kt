@@ -16,7 +16,7 @@ interface CardDao {
     fun delete(card: Card)
 
     @Query("SELECT * FROM card WHERE number == :number")
-    fun getTreesByNumber(number: Int): LiveData<Card>
+    fun getCardByNumber(number: Int): LiveData<Card>
 
     //TODO: Use LiveData
     @Query("SELECT * FROM card")

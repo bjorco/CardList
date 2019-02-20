@@ -31,6 +31,7 @@ class CreateCardsActivity : AppCompatActivity() {
             .allowMainThreadQueries()
             .build()
 
+        //TODO: Allow user to enter their own image
         val img = arrayOf(R.color.colorPrimary, R.color.colorError, R.color.colorAccent)
 
         db.cardDao().insert(Card(0, name, number, img[(0..2).random()]))

@@ -1,4 +1,4 @@
-package com.bjornolsen.cards
+package com.bjornolsen.cards.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.bjornolsen.cards.R
 import com.bjornolsen.cards.data.Card
 
 class CardAdapter(context: Context, private val mCards: ArrayList<Card>) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
@@ -16,7 +17,7 @@ class CardAdapter(context: Context, private val mCards: ArrayList<Card>) : Recyc
         val mCardImage : ImageView = v.findViewById(R.id.icr_img_card)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_card_row, parent, false)
         return ViewHolder(view)
     }
@@ -25,7 +26,7 @@ class CardAdapter(context: Context, private val mCards: ArrayList<Card>) : Recyc
         return mCards.size
     }
 
-    override fun onBindViewHolder(holder: CardAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.mCardName.text = mCards[position].name
         holder.mCardNumber.text = mCards[position].number.toString()
         holder.mCardImage.setImageResource(mCards[position].image)

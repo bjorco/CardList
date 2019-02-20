@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content" android:id="@+id/isr_root_layout">
+
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@color/colorAccent"
+            android:id="@+id/isr_img_store"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/img_description"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" app:layout_constraintStart_toEndOf="@+id/isr_img_store"
+            android:layout_marginStart="8dp" android:text="@string/store_name" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="@string/txt_debug_text_filler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/isr_txt_amount" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toEndOf="@+id/isr_img_store"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+</android.support.constraint.ConstraintLayout>
