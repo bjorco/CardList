@@ -31,7 +31,9 @@ class CreateCardsActivity : AppCompatActivity() {
             .allowMainThreadQueries()
             .build()
 
-        db.cardDao().insert(Card(0, name, number))
+        val img = arrayOf(R.color.colorPrimary, R.color.colorError, R.color.colorAccent)
+
+        db.cardDao().insert(Card(0, name, number, img[(0..2).random()]))
 
         finish()
     }

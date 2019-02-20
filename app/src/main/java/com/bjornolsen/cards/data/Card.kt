@@ -6,7 +6,8 @@ import android.arch.persistence.room.PrimaryKey
 @Entity
 data class Card(
     @PrimaryKey(autoGenerate = true)
-    var id: Int,
-    var name: String,
-    var number: Int
+    val id: Int,
+    val name: String,
+    val number: Int,
+    val image: Int
 )
