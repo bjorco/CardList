@@ -15,7 +15,7 @@ class CardAdapter(context: Context, private val mCards: ArrayList<Card>) : Recyc
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardAdapter.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_row, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_card_row, parent, false)
         return ViewHolder(view)
     }
 
